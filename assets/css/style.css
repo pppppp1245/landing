@@ -1,0 +1,181 @@
+@import url('commons.css');
+
+
+.header_wrap {
+    height: 69px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+
+}
+
+.nav {
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navi {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.direct_btn {
+    display: flex;
+    background-color: #1C49FF;
+    border-radius: 100px;
+    width: 180PX;
+    height: 38PX;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.direct_btn span {
+    font-family: 'Pretendard';
+    font-size: 16px;
+    color: #fff;
+    padding: 0 10px;
+    width: auto;
+    font-weight: 600;
+}
+
+
+.kv{
+    height: 668px;
+    padding: 121px 0 106px 0;
+}
+.kv-content{
+    width: 1280px;
+    margin: 0 auto;
+}
+.kv-text-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.kv-main-txt{
+    font-family:'Pretendard';
+    color: #fff;
+    font-size: 85px;
+    font-weight: 900;
+    line-height: 101px;
+    margin-bottom: 27.5px;
+}
+.kv-txt-1{
+    display: inline-block;
+    position: relative;
+    top: -13px;
+    transform: rotate(-20.93deg);
+    color: #F4F974;
+    font-family: 'SchoolSafetyTteokbokki';
+    font-size: 85px;
+    margin-right: 20px;
+    font-weight: normal;
+}
+.kv-txt-2{
+    display: inline-block;
+    transform: rotate(15deg);
+    color: #F3B543;
+    font-family: 'SchoolSafetyTteokbokki';
+    font-size: 85px;
+    margin-right: 30px;
+    font-weight: normal;
+}
+.kv-btn{
+    font-family:'Pretendard';
+    color: #141A33;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 31px;
+
+    width: 282px;
+    height: 72px;
+    background-color: #fff;
+    border-radius: 10px;
+    letter-spacing: -1.5px;
+}
+
+.arrow{
+    margin-left: 10px;
+}
+
+.kv-text-img{
+    width: 50%;
+}
+.kv-text-img img{
+    width: 632px;
+}
+
+.app{
+    height: 281px;
+}
+.app-content{    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.top{
+    font-family:'Pretendard';
+    color: #fff;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 57px;
+    letter-spacing: -1.5px;
+}
+
+.bottom{
+    font-family:'Pretendard';
+    color: #fff;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 33px;
+}
+
+.top,.bottom{
+    display: flex;
+    gap: 108px;
+}
+.re{
+    display: flex;
+    align-items: center;
+}
+.re-ph{
+    height: 951px;
+    background-image: url(../images/rv-bg.jpg);
+
+}
+.re-ph{
+    width: 387px;
+    height: 781px;
+}
+.re-title{
+    width: 822px; 
+    height: 77px;
+    margin: auto;
+    background: linear-gradient(135deg, rgb(255, 255, 255), rgba(255, 255, 255, 0.3) 30%);
+    border-radius: 50px;
+    border: solid 1px var(--color-gray);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 4px 34px rgba(0, 0, 0, 0.15);
+}
+.re-title h3{    
+    color: #1C49FF;
+    font-family:'Pretendard';
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: -1.5px;
+    line-height: 57px;
+    padding: 10px;
+    gap: 10px;
+}
