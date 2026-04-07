@@ -1,7 +1,7 @@
 @import url('commons.css');
 
 
-.header_wrap {
+/* .header_wrap {
     height: 69px;
     display: flex;
     justify-content: center;
@@ -43,57 +43,63 @@
     padding: 0 10px;
     width: auto;
     font-weight: 600;
+} */
+*{
+    margin: 0;
+    padding: 0;
 }
 
+body{
+    font-size: 16px;
+}
 
-.kv{
+.kv {
     height: auto;
     padding: 121px 0 106px 0;
 }
-.kv-content{
+.kv-content {
     width: 1280px;
     margin: 0 auto;
 }
-.kv-text-content{
+.kv-text-content {
     width: 50%;
     display: flex;
     flex-direction: column;
     align-self: center;
 }
-
-.kv-main-txt{
-    font-family:'Pretendard';
+.kv-main-txt {
+    font-family: 'Pretendard';
     color: #fff;
-    font-size: 85px;
+    font-size: 5.313rem;
     font-weight: 900;
     line-height: 101px;
     margin-bottom: 27.5px;
 }
-.kv-txt-1{
+.kv-txt-1 {
     display: inline-block;
     position: relative;
     top: -13px;
     transform: rotate(-20.93deg);
     color: #F4F974;
     font-family: 'SchoolSafetyTteokbokki';
-    font-size: 85px;
+    font-size: 5.313rem;
     margin-right: 20px;
     font-weight: normal;
 }
-.kv-txt-2{
+.kv-txt-2 {
     display: inline-block;
     transform: rotate(15deg);
     color: #F3B543;
     font-family: 'SchoolSafetyTteokbokki';
-    font-size: 85px;
+    font-size: 5.313rem;
     margin-right: 30px;
     font-weight: normal;
 }
-.kv-btn{
-    font-family:'Pretendard';
+.kv-btn {
+    font-family: 'Pretendard';
     color: #141A33;
     font-weight: 600;
-    font-size: 26px;
+    font-size: 1.625rem;
     line-height: 31px;
 
     width: 282px;
@@ -102,16 +108,50 @@
     border-radius: 10px;
     letter-spacing: -1.5px;
 }
-
-.arrow{
+.arrow {
     margin-left: 10px;
 }
-
-.kv-text-img{
+.kv-text-img {
     width: 50%;
 }
-.kv-text-img img{
+.kv-text-img img {
     width: 632px;
+}
+
+
+.app {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    width: 1280px;
+    padding: 91px 304px 90px 305px;
+    color: #fff;
+    text-align: center;
+}
+
+.app-content-2 {
+    gap: 108px;
+}
+
+.app-content-2 h2 {
+    font-size: 3rem;
+    font-family: 'Pretendard';
+    font-weight: 900;
+}
+
+.app-content-2 p {
+    font-size: 1.375rem;
+    font-family: 'Pretendard';
+    font-weight: 300;
+}
+
+h2 {
+    padding-bottom: 2.063rem;
+}
+
+.price-event{
+    background: #F8F8F8;
 }
 
 @media (max-width: 1280px) {
@@ -120,63 +160,102 @@
     }
 }
 
-@media (max-width: 1020px) {
-
-}
+@media (max-width: 1020px) {}
 
 @media (max-width: 700px) {
-    .kv{
+    .kv {
         display: flex;
         align-items: center;
         height: auto;
         padding: 20px 0;
     }
-    .d-flex{
+
+    .d-flex {
         flex-direction: column-reverse;
         align-items: center;
     }
-    .kv-text-content{
+
+    .kv-text-content {
         margin: auto;
         text-align: center;
         align-items: center;
         width: 100%;
     }
-    .kv-main-txt{
+
+    .kv-main-txt {
         font-size: 48px;
         line-height: 57px;
         margin-bottom: 20px;
     }
-    .kv-txt-1{
+
+    .kv-txt-1 {
         font-size: 48px;
         top: -5px;
         margin-left: -20px;
     }
-    .kv-txt-2{
+
+    .kv-txt-2 {
         font-size: 48px;
         margin-right: 10px;
         margin-left: -10px;
     }
-    .kv-btn-content{
+
+    .kv-btn-content {
         display: flex;
         justify-content: center;
         width: 100%;
     }
-    .kv-btn{
+
+    .kv-btn {
         width: 180px;
         height: 48px;
         font-size: 18px;
     }
-    .kv-text-img{
+
+    .kv-text-img {
         width: 100%;
         display: flex;
         justify-content: center;
         height: auto;
         margin: auto;
-        
     }
-    img{
+
+    img {
         margin-bottom: 20px;
         padding: 0 20px;
     }
-    
+
+
+    .about-1 {
+        display: flex;
+    }
+
+    .app {
+        align-items: center;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        padding: 21px 39px;
+    }
+
+    .app-content-2 {
+        gap: 26px;
+    }
+
+    .app-content-2 h2 {
+        font-size: 22px;
+        font-family: 'Pretendard';
+        font-weight: 900;
+    }
+
+    .app-content-2 p {
+        font-size: 12px;
+        font-family: 'Pretendard';
+        font-weight: 300;
+    }
+
+    h2 {
+        padding-bottom: 12px;
+    }
 }
