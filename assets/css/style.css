@@ -47,7 +47,7 @@
 
 
 .kv{
-    height: 668px;
+    height: auto;
     padding: 121px 0 106px 0;
 }
 .kv-content{
@@ -114,68 +114,69 @@
     width: 632px;
 }
 
-.app{
-    height: 281px;
-}
-.app-content{    
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+@media (max-width: 1280px) {
+    .kv-content {
+        width: 100%;
+    }
 }
 
-.top{
-    font-family:'Pretendard';
-    color: #fff;
-    font-size: 48px;
-    font-weight: 900;
-    line-height: 57px;
-    letter-spacing: -1.5px;
-}
-
-.bottom{
-    font-family:'Pretendard';
-    color: #fff;
-    font-size: 22px;
-    font-weight: 300;
-    line-height: 33px;
-}
-
-.top,.bottom{
-    display: flex;
-    gap: 108px;
-}
-.re{
-    display: flex;
-    align-items: center;
-}
-.re-ph{
-    height: 951px;
-    background-image: url(../images/rv-bg.jpg);
+@media (max-width: 1020px) {
 
 }
-.re-ph{
-    width: 387px;
-    height: 781px;
-}
-.re-title{
-    width: 822px; 
-    height: 77px;
-    margin: auto;
-    background: linear-gradient(135deg, rgb(255, 255, 255), rgba(255, 255, 255, 0.3) 30%);
-    border-radius: 50px;
-    border: solid 1px var(--color-gray);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    box-shadow: 0 4px 34px rgba(0, 0, 0, 0.15);
-}
-.re-title h3{    
-    color: #1C49FF;
-    font-family:'Pretendard';
-    font-size: 48px;
-    font-weight: 600;
-    letter-spacing: -1.5px;
-    line-height: 57px;
-    padding: 10px;
-    gap: 10px;
+
+@media (max-width: 700px) {
+    .kv{
+        display: flex;
+        align-items: center;
+        height: auto;
+        padding: 20px 0;
+    }
+    .d-flex{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .kv-text-content{
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+    .kv-main-txt{
+        font-size: 48px;
+        line-height: 57px;
+        margin-bottom: 20px;
+    }
+    .kv-txt-1{
+        font-size: 48px;
+        top: -5px;
+        margin-left: -20px;
+    }
+    .kv-txt-2{
+        font-size: 48px;
+        margin-right: 10px;
+        margin-left: -10px;
+    }
+    .kv-btn-content{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .kv-btn{
+        width: 180px;
+        height: 48px;
+        font-size: 18px;
+    }
+    .kv-text-img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: auto;
+        margin: auto;
+        
+    }
+    img{
+        margin-bottom: 20px;
+        padding: 0 20px;
+    }
+    
 }
