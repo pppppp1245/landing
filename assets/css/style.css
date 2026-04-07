@@ -129,31 +129,63 @@ body{
     color: #fff;
     text-align: center;
 }
-
 .app-content-2 {
     gap: 108px;
 }
-
 .app-content-2 h2 {
     font-size: 3rem;
     font-family: 'Pretendard';
     font-weight: 900;
+    padding-bottom: 2.063rem;
 }
-
 .app-content-2 p {
     font-size: 1.375rem;
     font-family: 'Pretendard';
     font-weight: 300;
 }
 
-h2 {
-    padding-bottom: 2.063rem;
-}
-
 .price-event{
-    background: #F8F8F8;
+    /* background: #F8F8F8; */
+    background: #F3B543;
+}
+.price-title{
+    display: flex;
+    justify-content: center;
+}
+.icon-box{
+    width: 4.563rem;
+    height: 4.875rem;
+}
+.icon-conffeti{
+    width: 4.75rem;
+}
+.price-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pr-txt{
+    text-align: center;
+}
+.pr-txt h2{
+    font-family:'Pretendard';
+    color: #141A33;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 3.563rem;
+    margin-bottom: 0.625rem;
+}
+.pr-txt p{
+    font-family:'Pretendard';
+    color: #141A33;
+    font-size: 1.375rem;
+    font-weight: 300;
 }
 
+
+.icon-bar{
+    width: 1rem;
+}
 @media (max-width: 1280px) {
     .kv-content {
         width: 100%;
@@ -220,7 +252,7 @@ h2 {
         margin: auto;
     }
 
-    img {
+    .kv-text-img img {
         margin-bottom: 20px;
         padding: 0 20px;
     }
@@ -255,7 +287,8 @@ h2 {
         font-weight: 300;
     }
 
-    h2 {
+    .app-content-2 h2 {
         padding-bottom: 12px;
     }
 }
+
