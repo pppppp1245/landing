@@ -1,7 +1,7 @@
 @import url('commons.css');
 
 
-/* .header_wrap {
+.header_wrap {
     height: 69px;
     display: flex;
     justify-content: center;
@@ -43,7 +43,7 @@
     padding: 0 10px;
     width: auto;
     font-weight: 600;
-} */
+}
 * {
     margin: 0;
     padding: 0;
@@ -208,15 +208,36 @@ body {
     border: 2px solid#C0C0C0;
     border-radius: 10px;
     padding: 21px 38px 29px 30px;
+    width: 374px;
 }
-
-.price span{
+.price-2 {
+    border: 2px solid#A1C6FF;
+}
+.price-3 {
+    border: 2px solid#1C49FF;
+}
+.pr-top span{
     background-color: #C0C0C0;
     border-radius: 100px;
     padding: 5px 15px;
     color: #fff;
     font-family: 'Pretendard';
     font-size: 1rem;
+    margin-bottom: 20px;
+}
+.price-2 span{
+    background-color: #A1C6FF;
+}
+.price-3 span{
+    background-color: #1C49FF;
+}
+.pr-box{
+    background-color: #A1C6FF;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 600;
+    font-family: 'Pretendard';
+    padding: 10px;
 }
 .icon-bar {
     width: 1rem;
@@ -224,6 +245,7 @@ body {
 .gnb li{
     display: flex;
     gap: 10px;
+    margin-bottom: 20px;
 }
 .li-txt-color{
     color: #141A33;
@@ -250,27 +272,40 @@ body {
     padding: 0 39px;
     gap: 40px;
 }
-.price h4{
+.pr-top h4{
     font-family: 'Pretendard';
     font-size: 26px;
     font-weight: 600;
     color: #141A33;
     margin-bottom: 5px;
 }
-.price p{
+.pr-top p{
     font-family: 'Pretendard';
     font-size: 18px;
     font-weight: 300;
     color: #141A33;
 }
-.price h3{
+.pr-bt{
     font-family: 'Pretendard';
-    font-size: 40px;
-    font-weight: 600;
-    color: #141A33;
     /* transform: translateX(70%) */
     text-align: end;
 }
+.pr-bt h3{
+    font-size: 40px;
+    font-weight: 600;
+    color: #141A33;
+}
+.pr-bt h5{
+    font-size: 22px;
+    font-weight: 300;
+    color: #141A33;
+}
+.pr-bt h6{
+    font-size: 18px;
+    font-weight: 300;
+    color: #1C49FF;
+}
+
 @media (max-width: 1280px) {
     .kv-content {
         width: 100%;
@@ -285,6 +320,10 @@ body {
 @media (max-width: 1020px) {}
 
 @media (max-width: 700px) {
+
+    .header_wrap {
+        display: none;
+    }
 
     .kv {
         display: flex;
@@ -382,5 +421,7 @@ body {
         padding-bottom: 12px;
     }
 
-
+    .header_wrap{
+        display: none;
+    }
 }
