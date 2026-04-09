@@ -12,7 +12,10 @@
     <!-- Pretendard Font -->
     <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
     <!-- Hakgyoansim TTeokbokki Font -->
-    <link href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307@1.0/HakgyoansimTteokbokkiB.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307@1.0/HakgyoansimTteokbokkiB.css"
+        rel="stylesheet">
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -37,7 +40,6 @@
         </nav>
     </header>
 
-
     <section class="kv main-bg-color">
         <div class=" kv-content column wrap">
             <div class="d-flex">
@@ -56,6 +58,56 @@
                     <img src="assets/images/kv-image.png" alt="">
                 </div>
 
+            </div>
+        </div>
+    </section>
+
+    <section class="ai-card-section">
+        <div class="inner">
+            <div class="text-box">
+                <h2 class="card-title">하루 10분 AI 대화로<br>영어 자신감을 바로 얻으세요.</h2>
+            </div>
+            <div class="card-box">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background: #1C49FF;">
+                            <span class="card-number">01</span>
+                            <h3 class="card-slide-title">콘텐츠 제작</h3>
+                            <ui class="card-description">
+                                <li>미국 현지 스튜디오 제작</li>
+                                <li>원어민 표현 기반 콘텐츠 기획</li>
+                                <li>최신 영어 트렌드 반영</li>
+                            </ui>
+                        </div>
+                        <div class="swiper-slide" style="background: #87C24C;">
+                            <span class="card-number">02</span>
+                            <h3 class="card-slide-title">녹음</h3>
+                            <ui class="card-description">
+                                <li>원어민 성우 직접 녹음</li>
+                                <li>자연스러운 발음·억양 반영</li>
+                                <li>실제 대화 속도 기반 음성 제작</li>
+                            </ui>
+                        </div>
+                        <div class="swiper-slide" style="background: #FEAFAF;">
+                            <span class="card-number">03</span>
+                            <h3 class="card-slide-title">품질관리</h3>
+                            <ui class="card-description">
+                                <li>오류 문장 재녹음</li>
+                                <li>STT 자동 오류 검출</li>
+                                <li>음성·스크립트 품질 검수</li>
+                            </ui>
+                        </div>
+                        <div class="swiper-slide" style="background: #FDAD18;">
+                            <span class="card-number">04</span>
+                            <h3 class="card-slide-title">맞춤 학습</h3>
+                            <ui class="card-description">
+                                <li>개인 목표 기반 커리큘럼</li>
+                                <li>상황별 표현 학습 (여행·취업·시험)</li>
+                                <li>실전 대화 중심 학습 설계</li>
+                            </ui>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -94,12 +146,16 @@
         <div class="price-content">
             <div class="price">
                 <div class="pr-top">
-                    <span>free</span>
-                    <h4>무료</h4>
-                    <p>광고, 하루 횟수 제한</p>
+                    <div class="pr-span">
+                        <span>free</span>
+                    </div>
+                    <div class="pr-sub">
+                        <h4>무료</h4>
+                        <p>광고, 하루 횟수 제한</p>
+                    </div>
                 </div>
                 <div class="pr-bt">
-                    <h3>0원</h3>
+                    <h3 class="zero">0원</h3>
                 </div>
                 <ul class="gnb">
                     <li class="li-txt-color"> <img src="assets/images/icon/bar.svg" class="icon-bar" alt="">스피킹 트레이닝
@@ -117,10 +173,11 @@
                         우선 제공</li>
                 </ul>
             </div>
-            
-            <div class="price price-2">
+            <div class="price">
                 <div class="pr-top">
-                    <span>인기</span>
+                    <div class="price-2">
+                        <span>인기</span>
+                    </div>
                     <h4>프리미엄</h4>
                 </div>
                 <div class="pr-bt">
@@ -143,9 +200,11 @@
                         우선 제공</li>
                 </ul>
             </div>
-            <div class="price price-3">
+            <div class="price">
                 <div class="pr-top">
-                    <span>최대할인</span>
+                    <div class="price-3">
+                        <span>최대할인</span>
+                    </div>
                     <h4>프리미엄 플러스</h4>
                 </div>
                 <div class="pr-bt">
@@ -167,181 +226,16 @@
                     <li class="li-txt-color-03"> <img src="assets/images/icon/bar.svg" class="icon-bar" alt="">신규 콘텐츠
                         우선 제공</li>
                 </ul>
-                <img src="assets/images/icon/coin.webp" class="icon-coin" alt="">
+                <!-- <img src="assets/images/icon/coin.webp" class="icon-coin" alt=""> -->
             </div>
         </div>
 
 
-    </section>
-
-    <!-- Spring Slider Section -->
-    <section class="spring-section">
-        <div class="spring-container">
-            <h2 class="spring-title">
-                하루 10분 AI 대화로<br>
-                영어 자신감을 바로 얻으세요.
-            </h2>
-
-            <div class="spring-slider-wrapper">
-                <div class="swiper springSlider">
-                    <div class="swiper-wrapper">
-                        <!-- Slide 01 - White -->
-                        <div class="swiper-slide spring-slide">
-                            <div class="card card-white">
-                                <span class="slide-num">01</span>
-                                <h3 class="slide-title">맞춤 학습</h3>
-                                <img src="assets/images/icon/folder.png" class="slide-icon" alt="">
-                                <img src="assets/images/kv-image.png" class="slide-image" alt="">
-                            </div>
-                            <div class="arrow-container arrow-right-only">
-                                <button class="arrow-btn arrow-right">
-                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#1C49FF" stroke-width="2">
-                                        <path d="M9 6l6 6-6 6"/>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-
-                        <!-- Slide 02 - Blue (Main) -->
-                        <div class="swiper-slide spring-slide">
-                            <div class="card card-primary">
-                                <span class="slide-num">02</span>
-                                <h3 class="slide-title">콘텐츠 제작</h3>
-                                <img src="assets/images/icon/star.png" class="slide-icon-small" alt="">
-                                <div class="slide-description">
-                                    <ul>
-                                        <li>미국 현지 스튜디오 제작</li>
-                                        <li>원어민 표현 기반 콘텐츠 기획</li>
-                                        <li>최신 영어 트렌드 반영</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="arrow-container">
-                                <button class="arrow-btn arrow-left">
-                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#fff" stroke-width="2">
-                                        <path d="M15 6l-6 6 6 6"/>
-                                    </svg>
-                                </button>
-                                <button class="arrow-btn arrow-right">
-                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#fff" stroke-width="2">
-                                        <path d="M9 6l6 6-6 6"/>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-
-                        <!-- Slide 03 - White -->
-                        <div class="swiper-slide spring-slide">
-                            <div class="card card-white">
-                                <span class="slide-num">03</span>
-                                <h3 class="slide-title">녹음</h3>
-                                <img src="assets/images/icon/folder.png" class="slide-icon" alt="">
-                                <img src="assets/images/kv-image.png" class="slide-image" alt="">
-                            </div>
-                            <div class="arrow-container">
-                                <button class="arrow-btn arrow-left">
-                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#1C49FF" stroke-width="2">
-                                        <path d="M15 6l-6 6 6 6"/>
-                                    </svg>
-                                </button>
-                                <button class="arrow-btn arrow-right">
-                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#1C49FF" stroke-width="2">
-                                        <path d="M9 6l6 6-6 6"/>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-
-                        <!-- Slide 04 - White -->
-                        <div class="swiper-slide spring-slide">
-                            <div class="card card-white">
-                                <span class="slide-num">04</span>
-                                <h3 class="slide-title">품질 관리</h3>
-                                <img src="assets/images/icon/folder.png" class="slide-icon" alt="">
-                                <img src="assets/images/kv-image.png" class="slide-image" alt="">
-                            </div>
-                            <div class="arrow-container">
-                                <button class="arrow-btn arrow-left">
-                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#1C49FF" stroke-width="2">
-                                        <path d="M15 6l-6 6 6 6"/>
-                                    </svg>
-                                </button>
-                                <button class="arrow-btn arrow-right">
-                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#1C49FF" stroke-width="2">
-                                        <path d="M9 6l6 6-6 6"/>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Pagination -->
-            <div class="spring-pagination"></div>
-        </div>
     </section>
 
 </body>
 
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const springSlider = new Swiper('.springSlider', {
-            loop: true,
-            centeredSlides: true,
-            slidesPerView: 'auto',
-            spaceBetween: 52,
-            speed: 800,
-            initialSlide: 1,
-            pagination: {
-                el: '.spring-pagination',
-                clickable: true,
-                renderBullet: function (index, className) {
-                    return '<span class="' + className + '"></span>';
-                }
-            },
-            on: {
-                slideChange: function () {
-                    updateSlideState();
-                },
-                init: function() {
-                    updateSlideState();
-                }
-            }
-        });
+<!-- Scripts -->
+<script src="assets/js/script.js"></script>
 
-        function updateSlideState() {
-            const slides = document.querySelectorAll('.spring-slide');
-            slides.forEach(slide => {
-                slide.classList.remove('main-slide');
-            });
-            
-            const activeSlide = document.querySelector('.swiper-slide-active');
-            if (activeSlide) {
-                activeSlide.classList.add('main-slide');
-            }
-        }
-
-        // Arrow navigation
-        document.querySelectorAll('.arrow-btn').forEach((btn) => {
-            btn.addEventListener('click', (e) => {
-                e.stopPropagation();
-                if (btn.classList.contains('arrow-left')) {
-                    springSlider.slidePrev();
-                } else if (btn.classList.contains('arrow-right')) {
-                    springSlider.slideNext();
-                }
-            });
-        });
-        
-        // Pagination click
-        document.querySelectorAll('.spring-pagination .swiper-pagination-bullet').forEach((bullet, index) => {
-            bullet.addEventListener('click', () => {
-                springSlider.slideTo(index);
-            });
-        });
-    });
-</script>
 </html>
