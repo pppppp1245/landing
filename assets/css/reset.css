@@ -33,7 +33,7 @@ a {
 /* 이미지 */
 img, picture, video, canvas, svg {
   display: block;
-  max-width: 100%;
+  /* max-width: 100%; */
 }
 
 /* 버튼 초기화 */
