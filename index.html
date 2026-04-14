@@ -16,6 +16,10 @@
         rel="stylesheet">
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -151,7 +155,7 @@
 
 
     <section class="app-rv main-bg-color">
-        <div class="app">
+        <div class="app" data-aos="zoom-out" data-aos-duration="2000">
             <div class="app-content-2">
                 <h2>4.8</h2>
                 <p>평점</p>
@@ -179,7 +183,8 @@
 
 
             <div class="rv-content">
-                <div class="rv-card card1">
+                <div class="rv-card card1" data-aos="fade-up"
+     data-aos-duration="3000">
                     <img src="assets/images/choi.png" class="profile">
                     <div class="glass-box">
                         <img src="assets/images/icon/5star.svg" class="icon-5star">
@@ -190,7 +195,8 @@
                     </div>
                 </div>
 
-                <div class="rv-card card2">
+                <div class="rv-card card2" data-aos="fade-up"
+     data-aos-duration="3000">
                     <img src="assets/images/kim.png" class="profile">
                     <div class="glass-box">
                         <img src="assets/images/icon/5star.svg" class="icon-5star">
@@ -200,7 +206,8 @@
                     </div>
                 </div>
 
-                <div class="rv-card card3">
+                <div class="rv-card card3" data-aos="fade-up"
+     data-aos-duration="3000">
                     <img src="assets/images/jung.png" class="profile">
                     <div class="glass-box">
                         <img src="assets/images/icon/5star.svg" class="icon-5star">
@@ -210,7 +217,8 @@
                     </div>
                 </div>
 
-                <div class="rv-card card4">
+                <div class="rv-card card4" data-aos="fade-up"
+     data-aos-duration="3000">
                     <img src="assets/images/park.png" class="profile">
                     <div class="glass-box">
                         <img src="assets/images/icon/5star.svg" class="icon-5star">
@@ -282,6 +290,7 @@
                     <h4>프리미엄</h4>
                 </div>
                 <div class="pr-bt">
+                    <p class="ss">60%</p>
                     <h5>정가 198,000원</h5>
                     <h3>79,000원</h3>
                     <h6>(6,583원/월)</h6>
@@ -301,6 +310,7 @@
                         우선 제공</li>
                 </ul>
             </div>
+
             <div class="price3">
                 <div class="pr-top">
                     <div class="price-3">
@@ -309,6 +319,7 @@
                     <h4>프리미엄 플러스</h4>
                 </div>
                 <div class="pr-bt">
+                     <p class="pp">70%</p>
                     <h5>정가 598,000원</h5>
                     <h3>179,400원</h3>
                     <h6>(14,950/월)</h6>
@@ -345,7 +356,7 @@
                 </h5>
                 <button class="free-btn">7일 무료 체험 시작하기</button>
             </div>
-            <img src="assets/images/icon/gift.png" class="icon-gift" alt="">
+            <img src="assets/images/icon/gift.png" class="icon-gift " data-aos="zoom-in"  data-aos-duration="1000" alt="">
         </div>
     </section>
 
@@ -375,7 +386,7 @@
 
     <footer>
         <div class="footer-title">
-            <div class="ft-top">
+            <div class="ft-top " >
                 <h1>TOCK</h1>
                 <div class="ft-ri">
                     <div class="ft-ri-le">
@@ -406,5 +417,11 @@
 
 <!-- Scripts -->
 <script src="assets/js/script.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+  AOS.init();
+</script>
 
 </html>

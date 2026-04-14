@@ -536,7 +536,7 @@ body {
 
 .pr-sub {
     line-height: 26px;
-    margin-bottom: 80px;
+    margin-bottom: 130px;
 }
 
 .pr-top h4 {
@@ -564,7 +564,20 @@ body {
     margin-top: 28px;
     line-height: 35px;
 }
-
+.ss{
+    color: #A1C6FF;
+     font-family: 'Pretendard';
+     font-weight: 900;
+     font-size: 40px;
+    padding-bottom: 15px;
+}
+.pp{
+    color: #1C49FF;
+     font-family: 'Pretendard';
+     font-weight: 900;
+     font-size: 40px;
+    padding-bottom: 15px;
+}
 .pr-bt h3 {
     font-size: 40px;
     font-weight: 600;
@@ -1368,7 +1381,14 @@ text-align: center;
     .pr-bt h5 {
         font-size: 18px;
     }
-
+    .ss{
+        font-size: 32px;
+        padding: 0;
+    }
+    .pp{
+        font-size: 32px;
+        padding: 0;
+    }
     .pr-bt h6 {
         font-size: 14px;
     }
@@ -1680,7 +1700,12 @@ text-align: center;
     .pr-bt h5 {
         font-size: 16px;
     }
-
+    .ss{
+        font-size: 16px;
+    }
+    .pp{
+        font-size: 16px;
+    }
     .pr-bt h6 {
         font-size: 12px;
     }
