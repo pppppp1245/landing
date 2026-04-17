@@ -63,3 +63,34 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+
+    const popup = document.getElementById('popup');
+    const openBtn1 = document.getElementById('openBtn1');
+    const openBtn2 = document.getElementById('openBtn2');
+    const openBtn3 = document.getElementById('openBtn3');
+    const closeBtn = document.getElementById('closeBtn');
+
+    openBtn1.addEventListener('click', () => {
+        popup.style.display = 'flex';
+    });
+
+    openBtn2.addEventListener('click', () => {
+        popup.style.display = 'flex';
+    });
+
+    openBtn3.addEventListener('click', () => {
+        popup.style.display = 'flex';
+    });
+
+    closeBtn.addEventListener('click', () => {
+        popup.style.display = 'none';
+    });
+
+    // 배경 클릭 시 닫기
+    popup.addEventListener('click', (e) => {
+        if (e.target === popup) {
+            popup.style.display = 'none';
+        }
+    });

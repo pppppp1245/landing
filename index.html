@@ -36,7 +36,7 @@
                     <li><a href="#">후기</a></li>
                     <li><a href="#">가격</a></li>
                     <li><a href="#">무료 체험</a></li>
-                    <button class="direct_btn">
+                    <button class="direct_btn" id="openBtn1">
                         <span>7일 무료 체험 시작하기 ></span>
                     </button>
                 </ul>
@@ -52,7 +52,7 @@
                     <h2 class="kv-main-txt"> <span class="kv-txt-1">말</span><span class="kv-txt-2">문</span>이 열리는<br>
                         영어 앱 TOCK!</h2>
                     <div class="kv-btn-content">
-                        <button class="kv-btn">
+                        <button class="kv-btn" id="openBtn2">
                             지금 바로 시작하기 <span class="arrow">></span>
                         </button>
                     </div>
@@ -65,6 +65,37 @@
             </div>
         </div>
     </section>
+
+<!-- 팝업 -->
+<div class="popup-overlay" id="popup">
+    <div class="popup-box">
+        <button class="popup-close" id="closeBtn">×</button>
+
+        <h2 class="popup-title">TOCK</h2>
+
+        <form class="popup-form">
+            <div class="form-row">
+                <input type="text" placeholder="성함*">
+                <input type="email" placeholder="이메일 주소*">
+            </div>
+
+            <div class="form-row">
+                <input type="text" placeholder="연락처*">
+                <input type="text" placeholder="학습 목적*">
+            </div>
+
+            <textarea placeholder="문의 사항*"></textarea>
+
+            <p class="popup-desc">
+                아래 제출을 클릭하면 귀하가 요청한 콘텐츠를 제공하기 위해 Tock에서 위에 제출된 개인 정보를 저장하여 
+                처리하는 것에 동의하게 됩니다. 입력하신 정보는 서비스 제공 목적 외에는 사용되지 않으며, 언제든지 
+                수신을 거부하실 수 있습니다. 자세한 내용은 개인정보처리방침을 확인해주세요.
+            </p>
+
+            <button type="submit" class="popup-submit">제출</button>
+        </form>
+    </div>
+</div>
 
     <section class="ai-card-section">
         <div class="inner">
@@ -354,7 +385,7 @@
                     지금 tock에 가입하고 프리미엄 영어 학습을 7일 동안 무료로 체험해보세요. <br>
                     부담 없이 시작하고 나에게 맞는 영어 공부를 찾아보세요.
                 </h5>
-                <button class="free-btn">7일 무료 체험 시작하기</button>
+                <button class="free-btn" id="openBtn3">7일 무료 체험 시작하기</button>
             </div>
             <img src="assets/images/icon/gift.png" class="icon-gift " data-aos="zoom-in"  data-aos-duration="1000" alt="">
         </div>
