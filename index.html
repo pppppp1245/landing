@@ -27,15 +27,15 @@
     <header class="header_wrap">
         <nav class="nav column wrap">
             <div class="logo">
-                <h1 class="logo-title">TOCK</h1>
+                <h1 class="logo-title"><a href="#kv">TOCK</a></h1>
             </div>
             <div class="gnb">
                 <ul class="navi">
-                    <li><a href="#">서비스 소개</a></li>
-                    <li><a href="#">학습 방법</a></li>
-                    <li><a href="#">후기</a></li>
-                    <li><a href="#">가격</a></li>
-                    <li><a href="#">무료 체험</a></li>
+                    <li><a href="#ai-card-section">서비스 소개</a></li>
+                    <li><a href="#hero">학습 방법</a></li>
+                    <li><a href="#app-rv">후기</a></li>
+                    <li><a href="#price-event">가격</a></li>
+                    <li><a href="#free-event">무료 체험</a></li>
                     <button class="direct_btn" id="openBtn1">
                         <span>7일 무료 체험 시작하기 ></span>
                     </button>
@@ -44,7 +44,7 @@
         </nav>
     </header>
 
-    <section class="kv main-bg-color">
+    <section class="kv main-bg-color" id="kv">
         <div class=" kv-content column wrap">
             <div class="d-flex">
 
@@ -97,7 +97,64 @@
     </div>
 </div>
 
-    <section class="ai-card-section">
+<!-- 서비스 이용약관 팝업 -->
+<div class="legal-popup-overlay" id="termsPopup">
+    <div class="legal-popup-box">
+        <button class="legal-popup-close" id="termsCloseBtn">×</button>
+        <h2 class="legal-popup-title">서비스 이용약관</h2>
+        <div class="legal-popup-content">
+            <h3>제1조 목적</h3>
+            <p>본 약관은 TOCK(이하 "회사")가 제공하는 영어 학습 서비스의 이용조건 및 절차를 규정합니다.</p>
+            
+            <h3>제2조 용어의 정의</h3>
+            <p>1. "서비스"란 회사가 제공하는 영어 학습 앱 및 관련 서비스를 말합니다.</p>
+            <p>2. "이용자"란 본 약관에 동의하고 회사가 제공하는 서비스를 이용하는 자를 말합니다.</p>
+            
+            <h3>제3조 이용계약의 성립</h3>
+            <p>이용계약은 이용자가 본 약관에 동의하고 회사가 승낙함으로써 성립합니다.</p>
+            
+            <h3>제4조 서비스의 이용</h3>
+            <p>이용자는 본 약관 및 회사가 정한 이용규칙을 준수하여야 합니다.</p>
+            
+            <h3>제5조 이용의 제한</h3>
+            <p>회사는 이용자가 본 약관을 위반하는 경우 서비스 이용을 제한하거나 정지할 수 있습니다.</p>
+            
+            <h3>제6조 약관의 변경</h3>
+            <p>회사는 필요한 경우 약관을 변경할 수 있으며, 변경된 약관은 서비스 내에 공지합니다.</p>
+        </div>
+    </div>
+</div>
+
+<!-- 개인정보 처리방침 팝업 -->
+<div class="legal-popup-overlay" id="privacyPopup">
+    <div class="legal-popup-box">
+        <button class="legal-popup-close" id="privacyCloseBtn">×</button>
+        <h2 class="legal-popup-title">개인정보 처리방침</h2>
+        <div class="legal-popup-content">
+            <h3>1. 개인정보의 수집 항목</h3>
+            <p>회사는 서비스 제공을 위해 다음과 같은 개인정보를 수집합니다.</p>
+            <p>- 필수항목: 성명, 이메일, 연락처</p>
+            <p>- 선택항목: 학습 목적, 문의 사항</p>
+            
+            <h3>2. 개인정보의 수집 목적</h3>
+            <p>수집한 개인정보는 서비스 제공, 고객 문의 응대, 서비스 개선을 위해 사용됩니다.</p>
+            
+            <h3>3. 개인정보의 보유 및 이용기간</h3>
+            <p>이용자의 개인정보는 서비스 제공 기간 동안에만 보유하며, 이용자가 탈퇴 요청 시 즉시 파기됩니다.</p>
+            
+            <h3>4. 개인정보의 제3자 제공</h3>
+            <p>회사는 이용자의 동의 없이 개인정보를 제3자에게 제공하지 않습니다.</p>
+            
+            <h3>5. 개인정보의 파기절차</h3>
+            <p>이용자의 개인정보는 보유기간이 만료되거나 이용자가 탈퇴할 경우 지체 없이 파기됩니다.</p>
+            
+            <h3>6. 이용자의 권리</h3>
+            <p>이용자는 언제든지 개인정보의 열람, 정정, 삭제를 요청할 수 있습니다.</p>
+        </div>
+    </div>
+</div>
+
+    <section class="ai-card-section" id="ai-card-section">
         <div class="inner">
             <div class="text-box">
                 <h2 class="card-title">하루 10분 AI 대화로<br>영어 자신감을 바로 얻으세요.</h2>
@@ -147,7 +204,7 @@
         </div>
     </section>
 
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="hero-co">
             <div class="left-icons">
                 <div><img src="assets/images/icon/h.png" class="h"></div>
@@ -185,8 +242,8 @@
     </section>
 
 
-    <section class="app-rv main-bg-color">
-        <div class="app" data-aos="zoom-out" data-aos-duration="2000">
+    <section class="app-rv main-bg-color" id="app-rv">
+        <div class="app" data-aos="zoom-in" data-aos-duration="2000">
             <div class="app-content-2">
                 <h2>4.8</h2>
                 <p>평점</p>
@@ -269,7 +326,7 @@
 
 
 
-    <section class="price-event">
+    <section class="price-event" id="price-event">
         <div class="price-title">
             <img src="assets/images/icon/box.png" class="icon-box" alt="">
         </div>
@@ -375,7 +432,7 @@
 
     </section>
 
-    <section class="free-event">
+    <section class="free-event" id="free-event">
         <div class="free-ct">
             <div class="free">
                 <h3>
@@ -396,20 +453,40 @@
             <h5>자주 묻는 질문</h5>
             <div class="faq-con">
                 <div class="faq">
-                    <h2>언제든지 해지할 수 있나요?</h2>
-                    <img src="assets/images/icon/plus.svg" class="icon-plus">
+                    <div class="faq-question">
+                        <h2>언제든지 해지할 수 있나요?</h2>
+                        <img src="assets/images/icon/plus.svg" class="icon-plus">
+                    </div>
+                    <div class="faq-answer">
+                        <p>네, 언제든지 해지가 가능합니다. 해지 후에도 남은 기간 동안은 서비스를 계속 이용하실 수 있습니다.</p>
+                    </div>
                 </div>
                 <div class="faq">
-                    <h2>어떤 기기에서 사용할 수 있나요?</h2>
-                    <img src="assets/images/icon/plus.svg" class="icon-plus">
+                    <div class="faq-question">
+                        <h2>어떤 기기에서 사용할 수 있나요?</h2>
+                        <img src="assets/images/icon/plus.svg" class="icon-plus">
+                    </div>
+                    <div class="faq-answer">
+                        <p>iOS, Android 기기 모두 지원합니다. 앱스토어와 구글플레이에서 다운로드하실 수 있습니다.</p>
+                    </div>
                 </div>
                 <div class="faq">
-                    <h2>인터넷이 없어도 사용할 수 있나요?</h2>
-                    <img src="assets/images/icon/plus.svg" class="icon-plus">
+                    <div class="faq-question">
+                        <h2>인터넷이 없어도 사용할 수 있나요?</h2>
+                        <img src="assets/images/icon/plus.svg" class="icon-plus">
+                    </div>
+                    <div class="faq-answer">
+                        <p>기본적으로 인터넷 연결이 필요하지만, 오프라인 모드를 통해 일부 콘텐츠는 인터넷 없이도 이용하실 수 있습니다.</p>
+                    </div>
                 </div>
                 <div class="faq">
-                    <h2>결제는 어떤 방식으로 이루어지나요?</h2>
-                    <img src="assets/images/icon/plus.svg" class="icon-plus">
+                    <div class="faq-question">
+                        <h2>결제는 어떤 방식으로 이루어지나요?</h2>
+                        <img src="assets/images/icon/plus.svg" class="icon-plus">
+                    </div>
+                    <div class="faq-answer">
+                        <p>신용카드, 계좌이체, 모바일 결제 등 다양한 결제 수단을 지원합니다. 정기 결제로 편리하게 이용하실 수 있습니다.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -427,8 +504,8 @@
                         <h6>가격 상담</h6>
                     </div>
                     <div class="ft-ri-ri">
-                        <h6>서비스 이용약관</h6>
-                        <h6>개인정보 처리방침</h6>
+                        <h6 class="legal-link" id="termsBtn">서비스 이용약관</h6>
+                        <h6 class="legal-link" id="privacyBtn">개인정보 처리방침</h6>
                     </div>
                 </div>
             </div>

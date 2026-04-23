@@ -94,3 +94,60 @@ document.addEventListener('DOMContentLoaded', function() {
             popup.style.display = 'none';
         }
     });
+
+    // FAQ Accordion functionality
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', function() {
+            const faq = this.parentElement;
+            const isActive = faq.classList.contains('active');
+            
+            // Close all other FAQs
+            document.querySelectorAll('.faq').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            // Toggle current FAQ
+            if (!isActive) {
+                faq.classList.add('active');
+            }
+        });
+    });
+
+    // Legal Popup functionality
+    const termsBtn = document.getElementById('termsBtn');
+    const privacyBtn = document.getElementById('privacyBtn');
+    const termsPopup = document.getElementById('termsPopup');
+    const privacyPopup = document.getElementById('privacyPopup');
+    const termsCloseBtn = document.getElementById('termsCloseBtn');
+    const privacyCloseBtn = document.getElementById('privacyCloseBtn');
+
+    termsBtn.addEventListener('click', () => {
+        termsPopup.style.display = 'flex';
+    });
+
+    privacyBtn.addEventListener('click', () => {
+        privacyPopup.style.display = 'flex';
+    });
+
+    termsCloseBtn.addEventListener('click', () => {
+        termsPopup.style.display = 'none';
+    });
+
+    privacyCloseBtn.addEventListener('click', () => {
+        privacyPopup.style.display = 'none';
+    });
+
+    // Close popup when clicking outside
+    termsPopup.addEventListener('click', (e) => {
+        if (e.target === termsPopup) {
+            termsPopup.style.display = 'none';
+        }
+    });
+
+    privacyPopup.addEventListener('click', (e) => {
+        if (e.target === privacyPopup) {
+            privacyPopup.style.display = 'none';
+        }
+    });
